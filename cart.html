@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart - WATZ OTAKU STORE</title>
+    <title>Your Cart - WATZ STORE</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -13,8 +13,8 @@
     <header>
         <!-- Consistent Header -->
         <a href="index.html" class="logo-link">
-            <img src="logo.png" alt="WATZ OTAKU STORE Logo" class="logo-img">
-            <h3>WATZ OTAKU STORE</h3>
+            <img src="logo.png" alt="WATZ STORE Logo" class="logo-img">
+            <h3>WATZ STORE</h3>
         </a>
         <nav>
             <a href="index.html#products">Shop</a>
@@ -84,11 +84,32 @@
 
     <footer>
         <div class="container">
-            <p>WATZ OTAKU STORE ワッツオタクストア &copy; 2026</p>
+            <p>WATZ STORE ワッツオタクストア &copy; 2026</p>
         </div>
     </footer>
 
     <!-- At the bottom of ALL your HTML files -->
     <script src="products.js"></script>
     <script src="script.js"></script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCc1SAPC2kmpepi9XoYCrvScbr5a8z5KJU",
+        authDomain: "watz-store.firebaseapp.com",
+        projectId: "watz-store",
+        storageBucket: "watz-store.firebasestorage.app",
+        messagingSenderId: "847134628835",
+        appId: "1:847134628835:web:12ebbca10de8fe7e30ded6"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+
 </html>
