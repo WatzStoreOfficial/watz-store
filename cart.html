@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - WATZ OTAKU STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <!-- Consistent Header -->
+        <a href="index.html" class="logo-link">
+            <img src="logo.png" alt="WATZ OTAKU STORE Logo" class="logo-img">
+            <h3>WATZ OTAKU STORE</h3>
+        </a>
+        <nav>
+            <a href="index.html#products">Shop</a>
+            <a href="index.html#about">About</a>
+        </nav>
+        <!-- NEW WRAPPER -->
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for items..." autocomplete="off">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <div id="suggestions-box" class="suggestions-box"></div>
+            </div>
+            <a href="cart.html" class="cart-icon-wrapper">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="cart-page-main">
+        <div class="cart-page-container">
+            <!-- Left Column: Cart Items -->
+            <div class="cart-items-column">
+                <h1 class="cart-page-title">My Cart (<span id="cart-item-count-title">0</span> Items)</h1>
+                <div id="cart-items-list">
+                    <!-- Cart items will be injected here by JavaScript -->
+                    <p class="cart-empty-msg">Your cart is currently empty. Let's find some awesome stuff!</p>
+                </div>
+            </div>
+
+            <!-- Right Column: Order Summary -->
+            <div class="order-summary-column">
+                <div class="order-summary-box">
+                    <h2>Order Summary</h2>
+                    <div class="summary-row">
+                        <span>Subtotal (<span id="cart-item-count-summary">0</span> items)</span>
+                        <span id="summary-subtotal">৳ 0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping Fee</span>
+                        <span id="summary-shipping">৳ 60</span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="summary-total">৳ 60</span>
+                    </div>
+                    <button id="checkout-button" class="cta-button checkout-btn">Proceed to Checkout</button>
+                </div>
+                <form id="checkout-form" class="checkout-form">
+                    <h2>Shipping Details</h2>
+                    <input type="text" id="customer-name" name="name" placeholder="Your Full Name" required>
+                    <input type="text" id="customer-address" name="address" placeholder="Full Address (House, Road, Area, City)" required>
+                    <input type="tel" id="customer-phone" name="phone" placeholder="Phone Number (e.g., 017...)" required>
+
+                    <!-- Hidden inputs for Formspree -->
+                    <input type="hidden" name="_subject" value="🎉 New Order from WATZ STORE!">
+                    <input type="hidden" name="_replyto" id="customer-email-replyto"> <!-- Optional but good practice -->
+                    <input type="hidden" name="_format" value="plain">
+                
+                    <!-- The final submit button for the form -->
+                    <button type="submit" class="cta-button place-order-btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>WATZ OTAKU STORE ワッツオタクストア &copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- At the bottom of ALL your HTML files -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</html>

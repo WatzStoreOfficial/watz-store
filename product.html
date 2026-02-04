@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title will be set by JavaScript -->
+    <title>WATZ STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <!-- A simplified header for the product page -->
+        <a href="index.html" class="logo-link"> <!-- This link takes you back home -->
+            <img src="logo.png" alt="WATZ STORE Logo" class="logo-img">
+            <h3>WATZ STORE</h3>
+        </a>
+        <nav>
+            <a href="index.html#products">‹ Back to Shop</a>
+        </nav>
+        <!-- NEW WRAPPER -->
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for items..." autocomplete="off">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <div id="suggestions-box" class="suggestions-box"></div>
+            </div>
+            <a href="cart.html" class="cart-icon-wrapper">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div id="product-detail-container" class="product-detail-container">
+            <!-- Product details will be injected here by JavaScript -->
+            <!-- This is just a loading placeholder -->
+            <div class="loading-placeholder">Loading Product...</div>
+        </div>
+
+        <section class="reviews-section">
+            <div id="reviews-container" class="reviews-container">
+                <!-- All the review content will be injected here by JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>WATZ STORE ワッツストア &copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- At the bottom of ALL your HTML files -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

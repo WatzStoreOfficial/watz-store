@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATZ STORE ワッツオタクストア</title>
+    
+    <!-- This now correctly links to your external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo-link">
+            <img src="logo.png" alt="WATZ STORE Logo" class="logo-img">
+            <h3>WATZ STORE</h3>
+        </a>
+        <nav>
+            <a href="#products">Shop</a>
+            <a href="#about">About</a>
+        </nav>
+        <!-- NEW WRAPPER -->
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for items..." autocomplete="off">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <div id="suggestions-box" class="suggestions-box"></div>
+            </div>
+            <a href="cart.html" class="cart-icon-wrapper">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Your Gateway to</h2>
+                <h1 class="hero-subtitle">Anime Culture</h1>
+                <p>Curated anime stationery & goods, delivered from our hearts to yours in Bangladesh.</p>
+                <a href="#products" class="cta-button">Explore The Collection ✨</a>
+            </div>
+        </section>
+
+        <section id="products" class="products-section hidden">
+            <div class="container">
+                <h2 class="section-title"><span>Our Collection</span></h2>
+                <div id="product-grid" class="product-grid">
+                    <!-- Products will be loaded here by JavaScript -->
+                </div>
+                <p id="no-results" class="no-results-message" style="display: none;">Waaah! We couldn't find any items matching that search. T_T</p>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section hidden">
+            <div class="container">
+                 <h2 class="section-title"><span>Meet The Team</span></h2>
+                 <div class="team-grid">
+
+                    <!-- Member 1 -->
+                    <div class="team-member">
+                        <img src="avatar-powplayz.png" alt="PowPlayz Avatar" class="team-avatar">
+                        <h3>PowPlayz</h3>
+                        <p class="team-role">The Visionary / Tech Guy</p>
+                        <p class="team-quote">"I wanted to build a place where fellow fans could find cool stuff. This is our dream!"</p>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="team-member">
+                        <img src="avatar-virex.png" alt="Virex Avatar" class="team-avatar">
+                        <h3>Virex</h3>
+                        <p class="team-role">The Social Media Guru</p>
+                        <p class="team-quote">"Connecting with our community and sharing awesome finds is what I love to do!"</p>
+                    </div>
+
+                    <!-- Member 3 (or remove if there are only two of you) -->
+                    <div class="team-member">
+                        <img src="avatar-zak.png" alt="Zak Avatar" class="team-avatar">
+                        <h3>Zak</h3>
+                        <p class="team-role">Software Designer/Sales Associate</p>
+                        <p class="team-quote">"My mission is making sure that your experience is smooth and keeping customers happy."</p>
+                    </div>
+
+                    <!-- Member 4 -->
+                    <div class="team-member">
+                        <img src="avatar-zubri.png" alt="Zubri Avatar" class="team-avatar">
+                        <h3>Zubri</h3>
+                        <p class="team-role">The Social Media Guru</p>
+                        <p class="team-quote">"Connecting with our community and sharing awesome finds is what I love to do!"</p>
+                    </div>
+
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>WATZ STORE ワッツストア &copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- At the bottom of ALL your HTML files -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
