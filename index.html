@@ -107,5 +107,26 @@
     <!-- At the bottom of ALL your HTML files -->
     <script src="products.js"></script>
     <script src="script.js"></script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCc1SAPC2kmpepi9XoYCrvScbr5a8z5KJU",
+        authDomain: "watz-store.firebaseapp.com",
+        projectId: "watz-store",
+        storageBucket: "watz-store.firebasestorage.app",
+        messagingSenderId: "847134628835",
+        appId: "1:847134628835:web:12ebbca10de8fe7e30ded6"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
 </body>
+
 </html>
