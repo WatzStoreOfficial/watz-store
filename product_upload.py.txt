@@ -1,0 +1,21 @@
+# Simple product upload example
+
+class Product:
+    def __init__(self, name, price, image_path):
+        self.name = name
+        self.price = price
+        self.image_path = image_path
+
+    def display_info(self):
+        print("Product Name:", self.name)
+        print("Price:", self.price, "tk")
+        print("Image File:", self.image_path)
+
+
+# Example usage
+product_name = "Demon Slayer 50 pc Sticker"
+product_price = 250
+product_image = "demon_slayer_sticker.png"  # replace with your actual image filename
+
+product = Product(product_name, product_price, product_image)
+product.display_info()
